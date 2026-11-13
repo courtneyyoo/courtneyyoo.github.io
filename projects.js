@@ -28,7 +28,7 @@ const PROJECTS = [
     role: "Product design · Mobile development",
     summary: "A family planner app that tracks kids' activities, who's driving, and what to bring.",
     details:
-      "Parents see each child's week at a glance, colour-coded by kid, with who's driving and a \"Don't forget\" list on every event. Recurring events, month and week views and timed reminders run on iOS, Android and the web from one codebase. The trickiest part was making reminders fire exactly on time, including across daylight-saving changes.",
+      "I took 4PM Planner from idea to working product, designing the experience and building the app myself. Parents see each child's activities at a glance, colour-coded by kid, with drop-off and pickup assignments and a \"Don't forget\" list for every event. It supports weekly recurring events, a month and week calendar, and reminders before each event and pickup, and it runs on iOS, Android and the web from one codebase. The toughest problem was making reminders fire at exactly the right time, including across daylight-saving changes and Android's exact-alarm permission.",
     tools: ["React Native", "Expo", "TypeScript", "Supabase"],
     image: "",
     screens: ["images/4pm-today.jpg", "images/4pm-calendar.png", "images/4pm-event.png"],
@@ -41,17 +41,16 @@ const PROJECTS = [
     type: "Client project",
     areas: ["ux", "dev"],
     year: "",
-    role: "Web design · Squarespace build · Branding & content",
+    role: "Web design · Development · Branding & content",
     summary: "A warm, playful website for a children's art studio, with programs, camps and online registration.",
     details:
-      "Families can browse age-based programs and summer camps and register online. I designed the site and built it on Squarespace, adding custom CSS and JavaScript where the templates fell short, and worked on the branding and content around a warm cream and brick-red palette.",
-    tools: ["Squarespace", "CSS", "JavaScript"],
+      "Red Brick Playhouse is a children's art and play studio in Coquitlam, BC. I designed and built their website on Squarespace, extended the platform with custom CSS and JavaScript, and worked on the branding and content. The site introduces three age-based programs (ALT Play for ages 1–3, Progress Play for 3–5 and Project Play for 5–8) along with summer camps, and lets families register online. A warm cream and brick-red palette, a playful badge logo and bright, hands-on photography carry the studio's creative personality across every page.",
+    tools: ["Squarespace", "Custom CSS", "JavaScript"],
     image: "images/mock-redbrick.png",
     color: "#6b1a10",
     links: { live: "https://www.redbrickplayhouse.com/", liveLabel: "Visit the live site", code: "" },
     gallery: [
       { src: "images/redbrick-home.jpg", caption: "Homepage" },
-      { src: "images/redbrick-mobile.png", caption: "Homepage on mobile" },
       { src: "images/redbrick-altplay.jpg", caption: "Program page: ALT Play" },
     ],
     note: "The client has since edited the live site. These screens show the original design, with its spacing and layout cleaned up for this portfolio.",
@@ -64,7 +63,7 @@ const PROJECTS = [
     role: "UX research · UI design · Prototyping",
     summary: "A mobile app for buying disposable cameras and mailing them back for film development.",
     details:
-      "Users compare disposable cameras by photo style, buy one, mail it back prepaid, and get their photos digitally and as prints. Research showed everyone loved the film look, but 83% found mailing or dropping off film the biggest hurdle. A persona, journey map and user flow shaped the wireframes; in the final design I moved Add to Cart above the photo previews so the main action is visible without scrolling.",
+      "Windback is a mobile app that makes film photography easy from start to finish. Users compare disposable cameras by photo style, buy one, mail it back with prepaid shipping, and get their photos digitally and as prints. I started with research: a questionnaire and two interviews showed that everyone loved the grainy vintage look, but 83% said mailing or dropping off film was the biggest barrier, and all of them wanted one app to handle it all. From there I built a persona, a user scenario and a journey map, mapped the user flow, then designed the screens and a clickable prototype in Figma. Moving from wireframes to the final design, I moved the Add to Cart button above the photo-style previews so the main action is visible without scrolling.",
     tools: ["Interviews & surveys", "Personas", "Journey mapping", "Wireframing", "Figma"],
     image: "",
     screens: [
@@ -92,7 +91,7 @@ const PROJECTS = [
     role: "UI design · Interactive prototyping",
     summary: "A custom tote bag shop where shoppers pick a bag colour and print and preview it live.",
     details:
-      "A desktop shop where customers design their own tote and watch it update as they choose a colour and print. The prototype is built on reusable components with variants: an active-state navbar, a hero carousel, colour and print pickers, gallery filters and a cart overlay.",
+      "Canvas Club is a desktop e-commerce website where shoppers design their own tote bag. I designed and prototyped it in Figma around a reusable component system: a navbar that shows the active page, a hero carousel on the Home page, colour and print pickers (four variants each) that update the bag preview in real time, a Gallery page with working category filters, and a cart overlay that opens from the cart icon and buttons.",
     tools: ["Figma", "Wireframing", "Components & variants"],
     image: "images/mock-canvasclub.png",
     color: "#e98c78",
@@ -110,10 +109,10 @@ const PROJECTS = [
     type: "Client project",
     areas: ["ux", "dev"],
     year: "",
-    role: "Web design · WordPress development",
+    role: "Web design · Custom theme development",
     summary: "A custom WordPress website for a travel agency specializing in rail travel.",
     details:
-      "Tours are organized by region (Canada, USA and international), and a trip planner lets visitors request quotes for round-trip, one-way or multi-city journeys. A custom theme matched the brand exactly while keeping content easy for the client to update.",
+      "I designed and built a custom WordPress theme for West Coast Rail Tours, a travel agency that specializes in rail travel. The site organizes tours by region (Canada, USA and international) and includes a trip planner that lets visitors request a quote for round-trip, one-way or multi-city journeys. Building it as a custom theme gave the client a site that matched their brand exactly while staying easy for them to update.",
     tools: ["WordPress", "PHP", "JavaScript"],
     image: "images/mock-wcrt.png",
     color: "#6b8f5e",
@@ -127,7 +126,7 @@ const PROJECTS = [
     role: "UX/UI redesign · Front-end development",
     summary: "A redesign of the program's website, chosen from competing proposals and launched as the official site.",
     details:
-      "The redesign puts the most-used sections (schedule, faculty, courses, IT certifications and resources) up front, in a layout that adapts from desktop to phone. It was chosen from a field of competing proposals and launched as BCIT's official site for the Technology Support Professional program.",
+      "I redesigned and built the website for BCIT's Technology Support Professional program to improve its usability and visual design. My design was chosen from a field of competing proposals and launched as the program's official website. The layout puts the most important sections (schedule, faculty, courses, IT certifications and resources) up front, and it adapts from desktop to tablet to phone.",
     tools: ["Responsive design", "HTML", "CSS", "PHP"],
     image: "images/mock-tsp.png",
     color: "#b5562a",
@@ -141,7 +140,7 @@ const PROJECTS = [
     role: "Web design · Front-end development",
     summary: "A fully responsive photo blog celebrating Audrey Hepburn.",
     details:
-      "A black-and-white masonry photo grid that reflows from a desktop sidebar layout to a compact mobile view, designed and coded from scratch.",
+      "A responsive photo blog concept about Audrey Hepburn, designed and coded from scratch. It uses a black-and-white masonry photo grid that reflows from a desktop sidebar layout to a compact mobile view.",
     tools: ["HTML", "CSS", "JavaScript"],
     image: "images/mock-audrey.png",
     color: "#333333",
@@ -155,7 +154,7 @@ const PROJECTS = [
     role: "Web design · Front-end development",
     summary: "A catalog website concept for a vintage camera shop.",
     details:
-      "A five-page catalog site for a fictional vintage camera shop. A badge-style logo, textured paper background, thin rules and soft pink accents set an analogue mood, while simple navigation keeps the cameras front and centre.",
+      "A catalog website for a fictional vintage camera shop, designed and coded as a school project. The design sets a quiet, analogue mood to match the products: a badge-style logo, a textured paper background, generous white space, thin rule lines and soft pink accents. Across five pages (home with new arrivals, a camera gallery, about, service and contact) I focused on a clear navigation structure, consistent typography and a layout that keeps the cameras front and centre.",
     tools: ["HTML", "CSS"],
     image: "images/mock-vintage.png",
     color: "#e46a7a",

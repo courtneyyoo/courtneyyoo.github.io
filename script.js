@@ -1,4 +1,7 @@
 const grid = document.getElementById("projectGrid");
+// Bump this whenever images are replaced, so browsers load the new files.
+const IMG_V = "19";
+const img = (src) => (/^https?:/.test(src) ? src : `${src}?v=${IMG_V}`);
 const dialog = document.getElementById("projectDialog");
 const dlgBody = document.getElementById("dlgBody");
 
@@ -10,11 +13,11 @@ function esc(s) {
 function thumb(p) {
   if (p.screens && p.screens.length) {
     return `<div class="phones" style="--c:${esc(p.color || "#ccc")};--n:${p.screens.length}">${p.screens
-      .map((s, n) => `<img src="${esc(s)}" alt="${esc(p.title)} screen ${n + 1}" loading="lazy">`)
+      .map((s, n) => `<img src="${esc(img(s))}" alt="${esc(p.title)} screen ${n + 1}" loading="lazy">`)
       .join("")}</div>`;
   }
   return p.image
-    ? `<img src="${esc(p.image)}" alt="${esc(p.title)} preview" loading="lazy"${p.fit === "cover" ? ' class="cover"' : ""}>`
+    ? `<img src="${esc(img(p.image))}" alt="${esc(p.title)} preview" loading="lazy"${p.fit === "cover" ? ' class="cover"' : ""}>`
     : `<div class="placeholder" style="--c:${esc(p.color || "#ccc")}"><span>${esc(p.title.charAt(0))}</span></div>`;
 }
 
@@ -57,7 +60,7 @@ function openProject(p) {
     <div class="gallery">${p.gallery
       .map((g) => `
       <figure>
-        <a href="${esc(g.src)}" target="_blank" rel="noopener" title="Open full size"><img src="${esc(g.src)}" alt="${esc(g.caption)}" loading="lazy"></a>
+        <a href="${esc(img(g.src))}" target="_blank" rel="noopener" title="Open full size"><img src="${esc(img(g.src))}" alt="${esc(g.caption)}" loading="lazy"></a>
         <figcaption>${esc(g.caption)}</figcaption>
       </figure>`)
       .join("")}
