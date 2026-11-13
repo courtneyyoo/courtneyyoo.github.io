@@ -1,0 +1,65 @@
+// ============================================================
+//  YOUR PROJECTS LIVE HERE
+//  To add a project: copy one { ... } block, paste it below the
+//  others, and change the text. Save, then refresh the page.
+//
+//  category: "professional", "personal", or "school"
+//  image:    put the picture in the images/ folder and write its
+//            name here, e.g. "images/my-project.png".
+//            Leave it as "" to show a colored placeholder.
+//  links:    leave a link as "" to hide that button.
+// ============================================================
+
+const PROJECTS = [
+  {
+    title: "4PM Planner",
+    category: "personal",
+    year: "2026",
+    role: "Design & development",
+    summary: "A mobile daily planner with on-time reminders, built with Expo and React Native.",
+    details:
+      "I designed and built a planner app for iOS and Android. The trickiest part was making reminders fire at exactly the right time, including across daylight-saving changes and Android's exact-alarm permission.",
+    tools: ["React Native", "Expo", "TypeScript"],
+    image: "",
+    color: "#f2a65a",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "Example client website",
+    category: "professional",
+    year: "2025",
+    role: "Freelance designer & developer",
+    summary: "Replace this with a real client project: who it was for and what you made.",
+    details:
+      "Describe the problem, your process (research, wireframes, design, build), and the result. Numbers help, like faster load times or more sign-ups.",
+    tools: ["Figma", "HTML", "CSS", "JavaScript"],
+    image: "",
+    color: "#7aa6c2",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "Example school project",
+    category: "school",
+    year: "2025",
+    role: "Course: [course name]",
+    summary: "Replace this with a class assignment you're proud of.",
+    details:
+      "Say what the assignment asked for, what you chose to do, and what you learned. Teachers' briefs make great 'problem' statements.",
+    tools: ["HTML", "CSS"],
+    image: "",
+    color: "#9bbf85",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "Example UI redesign",
+    category: "school",
+    year: "2024",
+    role: "UX / UI design",
+    summary: "Replace this with a redesign or case study from a design class.",
+    details: "Before-and-after screenshots work really well here.",
+    tools: ["Figma"],
+    image: "",
+    color: "#c79ad6",
+    links: { live: "", code: "" },
+  },
+];
