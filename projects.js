@@ -104,7 +104,6 @@ const PROJECTS = [
       { src: "images/canvasclub-cart.jpg", caption: "Cart overlay" },
       { src: "images/canvasclub-gallery.jpg", caption: "Gallery with category filters" },
     ],
-    note: "Product and gallery images were generated with AI.",
   },
   {
     title: "West Coast Rail Tours",

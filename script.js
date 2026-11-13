@@ -93,3 +93,10 @@ document.getElementById("themeToggle").addEventListener("click", () => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 render("all");
+
+// CY logo: always return to the very top of the page (no offset jump)
+document.querySelector(".logo").addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+});
