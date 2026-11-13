@@ -72,10 +72,10 @@ const PROJECTS = [
     title: "BCIT Technology Support Professional Program",
     category: "school",
     year: "",
-    role: "Responsive website redesign",
-    summary: "A redesign of the BCIT TSP program website for better usability and a stronger look.",
+    role: "Responsive website redesign · Selected & launched",
+    summary: "A class redesign of the BCIT TSP program website, chosen from many entries and launched as the official site.",
     details:
-      "I redesigned the BCIT Technology Support Professional program website to improve its usability and visual design. The new layout puts the most important sections (schedule, faculty, courses, IT certifications and resources) up front, and it adapts from desktop to tablet to phone.",
+      "As a class project, I redesigned the BCIT Technology Support Professional program website to improve its usability and visual design. My design was selected from many competing student entries and launched as the program's official website. The layout puts the most important sections (schedule, faculty, courses, IT certifications and resources) up front, and it adapts from desktop to tablet to phone.",
     tools: ["HTML", "CSS", "JavaScript", "PHP"],
     image: "images/bcit-tsp.png",
     color: "#b5562a",
@@ -84,7 +84,7 @@ const PROJECTS = [
   {
     title: "I ♥ Audrey",
     category: "personal",
-    year: "",
+    year: "2013",
     role: "Responsive blog design",
     summary: "A fully responsive photo blog design celebrating Audrey Hepburn.",
     details:
@@ -97,12 +97,12 @@ const PROJECTS = [
   {
     title: "Vintage Camera",
     category: "school",
-    year: "",
+    year: "2013",
     role: "BCIT project · Shop catalog website",
     summary: "A simple catalog website for a vintage camera shop.",
     details:
-      "A catalog website for a vintage camera shop, created as a BCIT project. It has a home page with new arrivals, a camera catalog, and service, about and contact pages.",
-    tools: ["HTML", "CSS"],
+      "A catalog website for a vintage camera shop, created as a BCIT project. It has a home page with new arrivals, a camera catalog, and service, about and contact pages. I originally built it for desktop, and in 2026 I updated it to be fully responsive, so it now adapts to tablets and phones while keeping the original desktop design.",
+    tools: ["HTML", "CSS", "Responsive design"],
     image: "images/vintage-camera.jpg",
     color: "#e46a7a",
     links: { live: "archive/vintage-camera/", liveLabel: "View the site", code: "" },
