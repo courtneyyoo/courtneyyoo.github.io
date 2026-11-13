@@ -171,7 +171,7 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
 .gallery { display: grid; gap: 22px; }
 .gallery figure { margin: 0; }
 .gallery img {
-  width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line);
+  width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: var(--band);
   transition: opacity .15s;
 }
 .gallery a:hover img { opacity: .9; }
