@@ -25,7 +25,8 @@ const PROJECTS = [
     image: "",
     screens: ["images/4pm-today.jpg", "images/4pm-calendar.png", "images/4pm-event.png"],
     color: "#f2a65a",
-    links: { live: "", code: "" },
+    links: { live: "4pm-demo/", liveLabel: "Try the demo", code: "" },
+    note: "The demo runs in your browser. Tap \"Explore with a sample family\" to see it with example data. Anything you add stays only on your device.",
   },
   {
     title: "Example client website",

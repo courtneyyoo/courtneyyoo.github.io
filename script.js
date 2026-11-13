@@ -41,7 +41,7 @@ function render(filter) {
 
 function openProject(p) {
   const links = [
-    p.links?.live && `<a class="btn" href="${esc(p.links.live)}" target="_blank" rel="noopener">View live</a>`,
+    p.links?.live && `<a class="btn" href="${esc(p.links.live)}" target="_blank" rel="noopener">${esc(p.links.liveLabel || "View live")}</a>`,
     p.links?.code && `<a class="btn ghost" href="${esc(p.links.code)}" target="_blank" rel="noopener">View code</a>`,
   ].filter(Boolean).join("");
   dlgBody.innerHTML = `
@@ -50,7 +50,8 @@ function openProject(p) {
     <h2 id="dlgTitle">${esc(p.title)}</h2>
     <p>${esc(p.details)}</p>
     <ul class="tags">${p.tools.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-    ${links ? `<div class="hero-actions">${links}</div>` : ""}`;
+    ${links ? `<div class="hero-actions">${links}</div>` : ""}
+    ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}`;
   dialog.showModal();
 }
 

@@ -106,6 +106,7 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
 .thumb.big:has(.phones) { aspect-ratio: auto; }
 .placeholder span { font-family: var(--serif); font-size: 4.5rem; color: rgba(255,255,255,.85); }
 .empty { color: var(--muted); }
+.note { color: var(--muted); font-size: .9rem; margin-top: 1rem; }
 
 .about-cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
 .about-cols > p { font-size: 1.1rem; margin: 0; }

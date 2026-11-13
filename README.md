@@ -22,3 +22,7 @@ A plain HTML/CSS/JavaScript portfolio. You don't need to install or build anythi
 ## After changing styles.css, projects.js or script.js
 
 Bump the `?v=` number on that file's line in `index.html` (for example `?v=2` → `?v=3`). Otherwise visitors' browsers may keep showing the old version for a while.
+
+## The 4PM Planner demo (`4pm-demo/`)
+
+This folder is the web build of the 4PM app, not hand-written code. To refresh it after changing the app, ask Claude to "rebuild the 4PM demo". It exports the app from `~/Projects/4pm` with `experiments.baseUrl` set to `/4pm-demo`, then copies the result here. `404.html` and `.nojekyll` at the root keep the demo working on GitHub Pages.
