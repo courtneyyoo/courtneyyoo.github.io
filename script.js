@@ -9,6 +9,11 @@ function esc(s) {
 }
 
 function thumb(p) {
+  if (p.screens && p.screens.length) {
+    return `<div class="phones" style="--c:${esc(p.color || "#ccc")}">${p.screens
+      .map((s, n) => `<img src="${esc(s)}" alt="${esc(p.title)} screen ${n + 1}" loading="lazy">`)
+      .join("")}</div>`;
+  }
   return p.image
     ? `<img src="${esc(p.image)}" alt="${esc(p.title)} preview" loading="lazy">`
     : `<div class="placeholder" style="--c:${esc(p.color || "#ccc")}"><span>${esc(p.title.charAt(0))}</span></div>`;

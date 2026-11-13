@@ -92,6 +92,18 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
   height: 100%; display: grid; place-items: center;
   background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 55%, #fff));
 }
+.phones {
+  height: 100%; display: flex; justify-content: center; align-items: flex-start; gap: 4%;
+  padding: 7% 6% 0; overflow: hidden;
+  background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 45%, #fff));
+}
+.thumb .phones img {
+  width: 28%; height: auto; object-fit: initial; border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+.thumb .phones img:nth-child(2) { margin-top: -3%; }
+.thumb.big .phones { padding-bottom: 6%; }
+.thumb.big:has(.phones) { aspect-ratio: auto; }
 .placeholder span { font-family: var(--serif); font-size: 4.5rem; color: rgba(255,255,255,.85); }
 .empty { color: var(--muted); }
 
