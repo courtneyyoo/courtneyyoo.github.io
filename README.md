@@ -18,3 +18,7 @@ A plain HTML/CSS/JavaScript portfolio. You don't need to install or build anythi
 2. Open `projects.js`, copy one `{ ... },` block, and paste it below the others.
 3. Change the text, set `category` to `"professional"`, `"personal"`, or `"school"`, and set `image` to `"images/your-file.png"`.
 4. Save and refresh the page.
+
+## After changing styles.css, projects.js or script.js
+
+Bump the `?v=` number on that file's line in `index.html` (for example `?v=2` → `?v=3`). Otherwise visitors' browsers may keep showing the old version for a while.
