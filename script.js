@@ -29,7 +29,7 @@ function render(filter) {
         <button class="card-btn" data-i="${i}" aria-label="Open ${esc(p.title)}">
           <div class="thumb">${thumb(p)}</div>
           <div class="card-text">
-            <p class="meta">${esc(LABELS[p.category] || p.category)} · ${esc(p.year)}</p>
+            <p class="meta">${[LABELS[p.category] || p.category, p.year].filter(Boolean).map(esc).join(" · ")}</p>
             <h3>${esc(p.title)}</h3>
             <p>${esc(p.summary)}</p>
           </div>
@@ -46,7 +46,7 @@ function openProject(p) {
   ].filter(Boolean).join("");
   dlgBody.innerHTML = `
     <div class="thumb big">${thumb(p)}</div>
-    <p class="meta">${esc(LABELS[p.category] || p.category)} · ${esc(p.year)} · ${esc(p.role)}</p>
+    <p class="meta">${[LABELS[p.category] || p.category, p.year, p.role].filter(Boolean).map(esc).join(" · ")}</p>
     <h2 id="dlgTitle">${esc(p.title)}</h2>
     <p>${esc(p.details)}</p>
     <ul class="tags">${p.tools.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>

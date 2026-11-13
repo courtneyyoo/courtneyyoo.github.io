@@ -1,0 +1,429 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700|News+Cycle:400,700);
+/* CSS Document */
+
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+
+body{
+	font-family: 'Neuton', serif;
+	color: #333333;
+	background-image: url(../img/ricepaper.png);
+
+}
+
+
+/* typography */
+
+nav a, h1, h2, h3{
+	font-family: 'News Cycle', sans-serif;
+}
+
+h1{
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+h2{
+	letter-spacing: 2px;
+	font-size: 15px;
+	margin-bottom: 15px;
+	color: #ff5269;
+}
+
+h3{
+	letter-spacing: 2px;
+	font-size: 13px;
+	margin-bottom: 12px;
+}
+
+p{
+	font-weight: 200;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+a{
+	text-decoration:none;
+	color: #333333;
+}
+
+.bold{
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+
+
+/* end typography */
+
+/* general styles */
+
+.wrapper{
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.double_border{
+  border-top: 1px solid #d2d2d2;
+  margin: 4px 0px 0px; 
+}
+
+.double_border:before{
+  content: '';
+  display: block;
+  position: relative;
+  top: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #d2d2d2;
+}
+
+.page_title{
+	margin-bottom: 40px;
+}
+
+.page_title h1{
+	margin-top: 45px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Neuton', serif;
+	font-weight: 300;
+	border-bottom: 1px solid #e0e0e0; 
+}
+
+
+/* end general styles */
+
+/* header */
+
+.logo{
+	margin-top: 50px;
+	padding: 30px 0;
+	text-align: center;
+	border-top: 1px solid #d2d2d2;
+}
+
+nav{
+	width: 750px;
+	height: 74px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+nav a{
+	width: 150px;
+	color: #333333;
+	line-height: 74px;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 3px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus{
+	text-decoration: none;
+	color: #ff5269;
+}
+
+/* end header */
+
+/* home */
+
+main{
+	border-top: 1px solid #d2d2d2;
+}
+
+.main_image{
+	margin-top: 50px;
+}
+
+.section_title{
+	height: 75px;
+	margin: 50px auto;
+	text-align: center;
+	text-transform: uppercase;
+
+	line-height: 75px;
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+
+.new_products img{
+	margin-bottom: 20px;
+	border: 1px solid  #F1F1F1;
+	
+}
+
+.new_products article{
+	position: relative;
+	text-align: center;
+	width: 278px;
+	float: left;
+	margin-bottom: 80px;
+}
+
+
+.new_products .article_02{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+article .new{
+	display: block;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ff5269;
+	color: #ff5269;
+	border-radius: 30px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	
+}
+
+.new p{
+	line-height: 60px;
+	text-align: center;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* end home */
+
+/* about us & service */
+
+.page_content{
+	margin: 0px auto 100px auto;
+	width: 650px;
+}
+
+.page_content img{
+	margin-bottom: 60px;
+}
+
+/* end about us & service */
+
+/* cameras */
+
+.showcase{
+	width: 720px;
+	margin: 60px auto 100px;
+	overflow: auto;
+}
+
+.showcase div[class^="c"]{
+	width: 200px;
+	height:200px;
+	border-radius: 100px;
+	background-size: cover;
+	background-position: center;
+	display: block;
+	float: left;
+	margin: 0px 20px 40px 20px;
+	opacity: 0.6;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+}
+
+.showcase div[class^="c"]:hover{
+	opacity:1;
+}
+
+.c_01{
+	background-image: url(../img/Argus_C3.jpg);
+}
+
+.c_02{
+	background-image: url(../img/Argus_C3_Matchmatic.jpg);
+}
+
+.c_03{
+	background-image: url(../img/03.jpg);
+}
+
+.c_04{
+	background-image: url(../img/5334970128_2b44f29bef_o.jpg);
+}
+
+.c_05{
+	background-image: url(../img/02.jpg);
+}
+
+.c_06{
+	background-image: url(../img/5343813315_c92fc6047c_o.jpg)
+}
+
+.c_07{
+	background-image: url(../img/05.jpg);
+}
+
+.c_08{
+	background-image: url(../img/06.jpg);
+}
+
+.c_09{
+	background-image: url(../img/07.jpg);
+}
+
+/* end cameras */
+
+/* contact */
+
+.contact {
+	width: 665px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.map_01 {
+	width: 450px;
+	float: left;
+	padding: 0 ;
+	margin-bottom: 80px;
+	}
+	
+.map_01 a{
+	text-decoration:none;
+	color: #333333;
+
+}
+
+.map_02 {
+	width: 180px;
+	float: right;
+	padding: 0;
+	margin-bottom: 80px;
+	}
+	
+	
+.box_01{
+	width:180px;
+	height: 170px;
+	}
+	
+.box_02 {
+	width:180px;
+	height:220px;
+	}
+	
+.box_02 td{
+	width: 85px;
+	height: 22px;
+	font-family: 'Neuton', serif;
+	font-weight: 100;
+}
+
+/* end contact */
+
+/* footer */
+
+footer{
+	width: 740px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	
+}
+
+footer p{
+	font-weight: 100;
+}
+
+footer a{
+	color: #ff5269;
+}
+
+footer div{
+	width: 165px;
+	display: block;
+	margin-top: 0;
+	padding-top: 40px;
+	font-size: 0.85em;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+.footer_01{
+	margin-left: 5px;
+	float: left;
+}
+
+.footer_03{
+	float: right;
+}
+
+.footer_02{
+	margin-left: 120px;
+}
+
+.clear{
+	clear: both;
+}
+
+/* end footer */

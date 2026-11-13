@@ -87,7 +87,7 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
 .card-text .meta { margin-bottom: .5rem; }
 
 .thumb { aspect-ratio: 16 / 10; overflow: hidden; background: var(--line); }
-.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
 .placeholder {
   height: 100%; display: grid; place-items: center;
   background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 55%, #fff));
@@ -98,7 +98,7 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
   background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 45%, #fff));
 }
 .thumb .phones img {
-  width: 28%; height: auto; object-fit: initial; border-radius: 10px;
+  width: 28%; height: auto; object-fit: initial; background: none; border-radius: 10px;
   box-shadow: 0 10px 24px rgba(0,0,0,.18);
 }
 .thumb .phones img:nth-child(2) { margin-top: -3%; }

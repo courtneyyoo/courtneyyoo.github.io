@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'Dancing Script', cursive;
+*/
+
+body{
+	position: relative;
+	background-color: black;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.vertical_nav{
+	width: 200px;
+	background-color: white;
+	display: block;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	z-index: 999;
+}
+
+.inner_nav{
+	height: 400px;
+	position: absolute;
+	top: 22%;
+	left: 12%;
+}
+
+.logo{
+	display: inline-block;
+	border: 3px solid black;
+	padding: 10px 12px 7px 14px;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+	line-height: 1.3;
+	font-weight: 700;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active{
+	background-color: black;
+	color: white;
+}
+	
+	
+
+.inner_nav ul{
+	margin-top: 43px;
+}
+
+.inner_nav ul li a{
+	display: block;
+	height: 37px;
+	line-height: 37px;
+	margin-bottom: 5px;
+	margin-left: 12px;
+	letter-spacing: 2px;
+	font-size: 1.063em;
+	-webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.inner_nav ul li a:hover,
+.inner_nav ul li a:focus,
+.inner_nav ul li a:active{
+	color: #f3013d;
+}
+
+.social{
+	margin-top: 110px;
+	margin-left: 6px;
+	font-size: 1.58em;
+	letter-spacing: 2px;
+}
+
+.social span:hover{
+	color: #333;
+	cursor: pointer;
+}
+
+#wrapper{
+	background-color: black;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 250px;
+}
+
+#list
+{
+    width: 100%;
+	display: block;
+    overflow: hidden;
+    margin-bottom: -100px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 50px;
+    -webkit-column-fill: balance;
+    -moz-column-count: 3;
+    -moz-column-gap: 50px;
+    -moz-column-fill: balance;
+    column-count: 3;
+    column-gap: 50px;
+    column-fill: balance;
+	background-color: black;
+}
+.item{
+        margin-bottom: 50px;
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        column-break-inside: avoid;
+		position: relative;
+		cursor: pointer;
+}
+	
+.item img{
+		width: 100%;
+}
+
+.horizontal_nav, .top_bar{
+	display: none;
+}
+
+.info{
+	position: absolute;
+	top: 27%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.category{
+	font-size: 1.25em;
+	padding: 5px 5px 3px 9px;
+	margin-bottom: 20px;
+	letter-spacing: 4px;
+	border: 2px solid white;
+	display: inline-block;
+}
+
+.title{
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.date{
+	border-top: 1px dashed white;
+	padding-top: 20px;
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+footer{
+	font-family: 'PT Sans', sans-serif;
+	color: white;
+	position: absolute;
+	bottom: -100px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 0.9em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #666;
+}
+
+footer a{
+	color: #666;
+}
+
+footer a:hover{
+	color: white;
+}
+
+.clear{
+	clear:both;
+}
+
+@media only screen and (max-width: 1280px){
+	/*.vertical_nav{
+		width: 20%
+	}*/
+	
+	#wrapper{
+		padding-top: 30px;
+		padding-right: 30px;
+		padding-left: 230px;	
+	}
+	
+	#list{
+        -webkit-column-gap: 30px; 
+        -moz-column-gap: 30px; 
+        column-gap: 30px;
+    }
+    .item{
+        margin-bottom: 30px;
+     }
+	 .info{
+		 font-size: 80%;
+	 }
+}
+ 
+@media only screen and (max-width: 1024px){
+	
+    #list
+    {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+	.date{
+		 display: inline-block;
+	 }
+	 
+	 .info{
+		 font-size: 100%;
+	 }
+}
+
+@media only screen and (max-width: 960px){
+	
+    #list
+    {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+	
+	footer{
+		bottom: -140px;
+	}
+}
+
+@media only screen and (max-width: 768px){	
+	#wrapper{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.vertical_nav{
+		width: 0;
+		display: none;
+	}
+	
+	.inner_nav{
+		width: 0;
+		display: none;
+	}
+	
+	.top_bar{
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 80px;
+		background-color: white;
+	}
+	
+	.btn_menu {
+		display: block;
+		overflow: hidden;
+		text-indent: -9999px;
+		border: none;
+		width: 28px;
+		height: 20px;
+		background-color: transparent;
+		background-image: url(../img/hamburger.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: right;
+		margin-right: 20px;
+		margin-top: 30px;
+		margin-bottom: 0;
+		outline: none; /* eliminates the orange box */
+		cursor: pointer;
+	}
+	
+	.horizontal_nav{
+		display: block;
+		width: 100%;
+		height: 0;
+		background-color: #FFF;
+	}
+	
+	.horizontal_nav li{
+		
+		border-top: 1px solid black;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.horizontal_nav ul li a {
+		display: block;
+		height: 45px;
+		line-height: 45px;
+		font-size: 1.125em;
+		text-align: center;
+		margin: 0 auto;
+		letter-spacing: 2px;
+	}
+	
+	.horizontal_nav ul li a:hover{
+		color: #f3013d;
+	}
+	
+	
+	.show_menu{
+		height: 265px;
+	}
+	
+	.logo{
+		border: none;
+		padding-top: 3px;
+		padding-left: 3px;
+		-webkit-transition: none;
+    	-moz-transition: none;
+    	-o-transition: none;
+    	transition: none;
+		line-height: 80px;
+		margin-left: 20px;
+		font-size: 1.25em;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom:0;
+		margin-bottom: 0;
+		float:left;
+		
+		
+	}
+	.logo:hover,
+	.logo:focus,
+	.logo:active{
+		background-color: transparent;
+		color: black;
+	}
+	
+	.social{
+		margin: 0;
+		padding: 0;
+		float: right;
+		display: block;
+		margin-top: 28px;
+		margin-right: 26px;
+		letter-spacing: 4px;
+		font-size: 1.42em;
+	}
+	
+
+}
+
+@media only screen and (max-width: 480px){
+		
+	.social{
+		letter-spacing: 2px;
+		font-size: 1.3em;
+		margin-right: 15px;
+	}
+	
+	
+	
+}
+
+@media only screen and (max-width: 360px){
+	.info{
+		font-size: 90%;
+		top: 20%;
+	}
+	
+	#wrapper{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

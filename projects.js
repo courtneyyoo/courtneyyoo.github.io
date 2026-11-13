@@ -4,6 +4,7 @@
 //  others, and change the text. Save, then refresh the page.
 //
 //  category: "professional", "personal", or "school"
+//  year:     optional. Leave as "" to hide it.
 //  image:    put the picture in the images/ folder and write its
 //            name here, e.g. "images/my-project.png".
 //            Leave it as "" to show a colored placeholder.
@@ -29,41 +30,81 @@ const PROJECTS = [
     note: "The demo runs in your browser. Tap \"Explore with a sample family\" to see it with example data. Anything you add stays only on your device.",
   },
   {
-    title: "Example client website",
-    category: "professional",
-    year: "2025",
-    role: "Freelance designer & developer",
-    summary: "Replace this with a real client project: who it was for and what you made.",
-    details:
-      "Describe the problem, your process (research, wireframes, design, build), and the result. Numbers help, like faster load times or more sign-ups.",
-    tools: ["Figma", "HTML", "CSS", "JavaScript"],
-    image: "",
-    color: "#7aa6c2",
-    links: { live: "", code: "" },
-  },
-  {
-    title: "Example school project",
+    title: "Windback",
     category: "school",
-    year: "2025",
-    role: "Course: [course name]",
-    summary: "Replace this with a class assignment you're proud of.",
+    year: "",
+    role: "GDES 2150 · App prototype",
+    summary: "A mobile app prototype designed in Figma.",
     details:
-      "Say what the assignment asked for, what you chose to do, and what you learned. Teachers' briefs make great 'problem' statements.",
-    tools: ["HTML", "CSS"],
-    image: "",
-    color: "#9bbf85",
-    links: { live: "", code: "" },
-  },
-  {
-    title: "Example UI redesign",
-    category: "school",
-    year: "2024",
-    role: "UX / UI design",
-    summary: "Replace this with a redesign or case study from a design class.",
-    details: "Before-and-after screenshots work really well here.",
+      "A mobile app designed and prototyped in Figma for GDES 2150.",
     tools: ["Figma"],
     image: "",
-    color: "#c79ad6",
+    color: "#8a7f74",
     links: { live: "", code: "" },
+  },
+  {
+    title: "Canvas Club",
+    category: "school",
+    year: "",
+    role: "MDIA 2330 · Website design",
+    summary: "An online shop design for canvas tote bags, from home page to cart.",
+    details:
+      "A website design for Canvas Club, a tote bag shop, created in Figma for MDIA 2330. It covers the home page, product listing, product details with color options, the cart, and a customer photo gallery.",
+    tools: ["Figma"],
+    image: "",
+    color: "#e98c78",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "West Coast Rail Tours",
+    category: "professional",
+    year: "",
+    role: "WordPress design & development",
+    summary: "A custom WordPress theme for a travel agency specializing in rail travel.",
+    details:
+      "I designed and built a custom WordPress theme for West Coast Rail Tours, a travel agency that specializes in rail travel. The site features tours by region (Canada, USA and international) and a trip planner that lets visitors request a quote for round-trip, one-way or multi-city journeys.",
+    tools: ["WordPress", "PHP", "HTML", "CSS", "JavaScript"],
+    image: "images/west-coast-rail-tours.jpg",
+    color: "#6b8f5e",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "BCIT Technology Support Professional Program",
+    category: "school",
+    year: "",
+    role: "Responsive website redesign",
+    summary: "A redesign of the BCIT TSP program website for better usability and a stronger look.",
+    details:
+      "I redesigned the BCIT Technology Support Professional program website to improve its usability and visual design. The new layout puts the most important sections (schedule, faculty, courses, IT certifications and resources) up front, and it adapts from desktop to tablet to phone.",
+    tools: ["HTML", "CSS", "JavaScript", "PHP"],
+    image: "images/bcit-tsp.png",
+    color: "#b5562a",
+    links: { live: "", code: "" },
+  },
+  {
+    title: "I ♥ Audrey",
+    category: "personal",
+    year: "",
+    role: "Responsive blog design",
+    summary: "A fully responsive photo blog design celebrating Audrey Hepburn.",
+    details:
+      "A design proposal for a responsive photo blog about Audrey Hepburn. It uses a black-and-white masonry photo grid that reflows from a desktop sidebar layout to a compact mobile view.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    image: "images/i-love-audrey.png",
+    color: "#333333",
+    links: { live: "archive/audrey/", liveLabel: "View the site", code: "" },
+  },
+  {
+    title: "Vintage Camera",
+    category: "school",
+    year: "",
+    role: "BCIT project · Shop catalog website",
+    summary: "A simple catalog website for a vintage camera shop.",
+    details:
+      "A catalog website for a vintage camera shop, created as a BCIT project. It has a home page with new arrivals, a camera catalog, and service, about and contact pages.",
+    tools: ["HTML", "CSS"],
+    image: "images/vintage-camera.jpg",
+    color: "#e46a7a",
+    links: { live: "archive/vintage-camera/", liveLabel: "View the site", code: "" },
   },
 ];
