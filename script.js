@@ -10,12 +10,12 @@ function esc(s) {
 
 function thumb(p) {
   if (p.screens && p.screens.length) {
-    return `<div class="phones" style="--c:${esc(p.color || "#ccc")}">${p.screens
+    return `<div class="phones" style="--c:${esc(p.color || "#ccc")};--n:${p.screens.length}">${p.screens
       .map((s, n) => `<img src="${esc(s)}" alt="${esc(p.title)} screen ${n + 1}" loading="lazy">`)
       .join("")}</div>`;
   }
   return p.image
-    ? `<img src="${esc(p.image)}" alt="${esc(p.title)} preview" loading="lazy">`
+    ? `<img src="${esc(p.image)}" alt="${esc(p.title)} preview" loading="lazy"${p.fit === "cover" ? ' class="cover"' : ""}>`
     : `<div class="placeholder" style="--c:${esc(p.color || "#ccc")}"><span>${esc(p.title.charAt(0))}</span></div>`;
 }
 
@@ -51,7 +51,17 @@ function openProject(p) {
     <p>${esc(p.details)}</p>
     <ul class="tags">${p.tools.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
     ${links ? `<div class="hero-actions">${links}</div>` : ""}
-    ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}`;
+    ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
+    ${p.gallery && p.gallery.length ? `
+    <h3 class="gallery-title">Process</h3>
+    <div class="gallery">${p.gallery
+      .map((g) => `
+      <figure>
+        <a href="${esc(g.src)}" target="_blank" rel="noopener" title="Open full size"><img src="${esc(g.src)}" alt="${esc(g.caption)}" loading="lazy"></a>
+        <figcaption>${esc(g.caption)}</figcaption>
+      </figure>`)
+      .join("")}
+    </div>` : ""}`;
   dialog.showModal();
 }
 
