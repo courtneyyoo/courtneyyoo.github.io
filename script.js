@@ -53,7 +53,7 @@ function openProject(p) {
     ${links ? `<div class="hero-actions">${links}</div>` : ""}
     ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
     ${p.gallery && p.gallery.length ? `
-    <h3 class="gallery-title">Process</h3>
+    <h3 class="gallery-title">${esc(p.galleryTitle || "Screens")}</h3>
     <div class="gallery">${p.gallery
       .map((g) => `
       <figure>
