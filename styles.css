@@ -1,6 +1,5 @@
-/* Colours and type carried over from courtneyyoo.com: navy, mint, pale mint, Lato.
-   The accent is a deep green taken from the same mint family, so the palette stays
-   cohesive and readable (5:1+ on white and on pale mint). */
+/* Colours and type carried over from courtneyyoo.com: navy, mint, pale mint,
+   the original peach/coral accent, and Lato. */
 :root {
   --bg: #ffffff;
   --band: #e7f2ef;          /* old hero background (pale mint) */
@@ -8,8 +7,8 @@
   --text: #2c2c7d;          /* old navy */
   --muted: #6b6973;         /* old dark gray */
   --line: #bfdec8;          /* old mint green */
-  --accent: #2b6f5a;        /* deep mint green: links, highlights, hover borders */
-  --accent-text: #2b6f5a;
+  --accent: #ec6f5f;        /* original peach / coral */
+  --accent-text: #ec6f5f;
   --on-accent: #ffffff;
   --radius: 14px;
   --serif: "Lato", system-ui, -apple-system, sans-serif;
@@ -18,12 +17,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #14143a; --band: #1b1b4a; --surface: #1d1d4c; --text: #eef4f1; --muted: #a69eb0;
-    --line: #34584a; --accent: #bfdec8; --accent-text: #bfdec8; --on-accent: #14143a;
+    --line: #34584a; --accent: #ec6f5f; --accent-text: #ec6f5f; --on-accent: #ffffff;
   }
 }
 :root[data-theme="dark"] {
   --bg: #14143a; --band: #1b1b4a; --surface: #1d1d4c; --text: #eef4f1; --muted: #a69eb0;
-  --line: #34584a; --accent: #bfdec8; --accent-text: #bfdec8; --on-accent: #14143a;
+  --line: #34584a; --accent: #ec6f5f; --accent-text: #ec6f5f; --on-accent: #ffffff;
 }
 
 * { box-sizing: border-box; }
