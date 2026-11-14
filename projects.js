@@ -1,9 +1,8 @@
 const PROJECTS = [
   {
     title: "4PM Planner",
-    type: "Product · Design & build",
+    type: "Mobile app",
     areas: ["ux", "dev", "mobile"],
-    year: "2026",
     role: "Product design · Mobile development",
     summary: "A family planner app that tracks kids' activities, who's driving, and what to bring.",
     details:
@@ -17,9 +16,8 @@ const PROJECTS = [
   },
   {
     title: "Red Brick Playhouse",
-    type: "Client project",
+    type: "Small business website",
     areas: ["ux", "dev"],
-    year: "",
     role: "Web design · Development · Branding & content",
     summary: "A warm, playful website for a children's art studio, with programs, camps and online registration.",
     details:
@@ -36,9 +34,8 @@ const PROJECTS = [
   },
   {
     title: "Windback",
-    type: "UX case study",
+    type: "Mobile app concept",
     areas: ["ux", "mobile"],
-    year: "2026",
     role: "UX research · UI design · Prototyping",
     summary: "A mobile app for buying disposable cameras and mailing them back for film development.",
     details:
@@ -64,9 +61,8 @@ const PROJECTS = [
   },
   {
     title: "Canvas Club",
-    type: "Interactive prototype",
+    type: "E-commerce concept",
     areas: ["ux"],
-    year: "2026",
     role: "UI design · Interactive prototyping",
     summary: "A custom tote bag shop where shoppers pick a bag colour and print and preview it live.",
     details:
@@ -85,9 +81,8 @@ const PROJECTS = [
   },
   {
     title: "West Coast Rail Tours",
-    type: "Client project",
+    type: "Travel agency website",
     areas: ["ux", "dev"],
-    year: "",
     role: "Web design · Custom theme development",
     summary: "A custom WordPress website for a travel agency specializing in rail travel.",
     details:
@@ -99,9 +94,8 @@ const PROJECTS = [
   },
   {
     title: "BCIT TSP Program Website",
-    type: "Launched redesign",
+    type: "Program website",
     areas: ["ux", "dev"],
-    year: "",
     role: "UX/UI redesign · Front-end development",
     summary: "A redesign of the program's website, chosen from competing proposals and launched as the official site.",
     details:
@@ -113,9 +107,8 @@ const PROJECTS = [
   },
   {
     title: "I ♥ Audrey",
-    type: "School project",
+    type: "Photo blog",
     areas: ["ux", "dev"],
-    year: "",
     role: "Web design · Front-end development",
     summary: "A fully responsive photo blog celebrating Audrey Hepburn.",
     details:
@@ -127,9 +120,8 @@ const PROJECTS = [
   },
   {
     title: "Vintage Camera",
-    type: "School project",
+    type: "Catalog website",
     areas: ["ux", "dev"],
-    year: "",
     role: "Web design · Front-end development",
     summary: "A catalog website concept for a vintage camera shop.",
     details:

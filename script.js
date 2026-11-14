@@ -30,7 +30,7 @@ function render(filter) {
         <button class="card-btn" data-i="${i}" aria-label="Open ${esc(p.title)}">
           <div class="thumb">${thumb(p)}</div>
           <div class="card-text">
-            <p class="meta">${[p.type, p.year].filter(Boolean).map(esc).join(" · ")}</p>
+            <p class="meta">${esc(p.type)}</p>
             <h3>${esc(p.title)}</h3>
             <p>${esc(p.summary)}</p>
           </div>
@@ -47,7 +47,7 @@ function openProject(p) {
   ].filter(Boolean).join("");
   dlgBody.innerHTML = `
     <div class="thumb big">${thumb(p)}</div>
-    <p class="meta">${[p.type, p.year].filter(Boolean).map(esc).join(" · ")}</p>
+    <p class="meta">${esc(p.type)}</p>
     <h2 id="dlgTitle">${esc(p.title)}</h2>
     ${p.role ? `<p class="role">${esc(p.role)}</p>` : ""}
     <p>${esc(p.details)}</p>
