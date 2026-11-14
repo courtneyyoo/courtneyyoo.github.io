@@ -123,7 +123,7 @@ const PROJECTS = [
     tools: ["HTML", "CSS", "JavaScript"],
     image: "images/mock-audrey.png",
     color: "#333333",
-    links: { live: "archive/audrey/", liveLabel: "View the site", code: "" },
+    links: { live: "projects/audrey/", liveLabel: "View the site", code: "" },
   },
   {
     title: "Vintage Camera",
@@ -137,6 +137,6 @@ const PROJECTS = [
     tools: ["HTML", "CSS"],
     image: "images/mock-vintage.png",
     color: "#e46a7a",
-    links: { live: "archive/vintage-camera/", liveLabel: "View the site", code: "" },
+    links: { live: "projects/vintage-camera/", liveLabel: "View the site", code: "" },
   },
 ];
