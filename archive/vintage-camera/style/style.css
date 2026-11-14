@@ -427,11 +427,6 @@ footer div{
 }
 
 /* end footer */
-/* ==========================================================
-   RESPONSIVE (added 2026)
-   Desktop (980px and wider) looks exactly like the original.
-   Below that, the layout adapts for tablets and phones.
-   ========================================================== */
 
 img{
 	max-width: 100%;

@@ -1,24 +1,3 @@
-// ============================================================
-//  YOUR PROJECTS LIVE HERE
-//  To add a project: copy one { ... } block, paste it below the
-//  others, and change the text. Save, then refresh the page.
-//
-//  type:     short label shown on the card, e.g. "Client project"
-//  areas:    which filters it appears under. Any of:
-//            "ux" (UX/UI Design), "dev" (Development), "mobile" (Mobile)
-//  year:     optional. Leave as "" to hide it.
-//  role:     what you did (one short line)
-//  details:  2–3 sentences about the project and key decisions
-//  tools:    tools and methods only (avoid repeating the role)
-//  image:    put the picture in the images/ folder and write its
-//            name here, e.g. "images/my-project.png".
-//            Leave it as "" to show a colored placeholder.
-//  screens:  (optional) phone screenshots, shown side by side
-//            instead of a single image, e.g. for a mobile app.
-//  gallery:  (optional) extra images shown in the pop-up.
-//  links:    leave a link as "" to hide that button.
-// ============================================================
-
 const PROJECTS = [
   {
     title: "4PM Planner",
@@ -28,7 +7,7 @@ const PROJECTS = [
     role: "Product design · Mobile development",
     summary: "A family planner app that tracks kids' activities, who's driving, and what to bring.",
     details:
-      "I took 4PM Planner from idea to working product, designing the experience and building the app myself. Parents see each child's activities at a glance, colour-coded by kid, with drop-off and pickup assignments and a \"Don't forget\" list for every event. It supports weekly recurring events, a month and week calendar, and reminders before each event and pickup, and it runs on iOS, Android and the web from one codebase. The toughest problem was making reminders fire at exactly the right time, including across daylight-saving changes and Android's exact-alarm permission.",
+      "Helps busy parents keep track of their kids' activities. Each child's schedule is colour-coded, every event shows who's driving and a \"Don't forget\" list, and reminders arrive before each event and pickup. Includes recurring events and month and week calendar views.",
     tools: ["React Native", "Expo", "TypeScript", "Supabase"],
     image: "",
     screens: ["images/4pm-today.jpg", "images/4pm-calendar.png", "images/4pm-event.png"],
@@ -44,7 +23,7 @@ const PROJECTS = [
     role: "Web design · Development · Branding & content",
     summary: "A warm, playful website for a children's art studio, with programs, camps and online registration.",
     details:
-      "Red Brick Playhouse is a children's art and play studio in Coquitlam, BC. I designed and built their website on Squarespace, extended the platform with custom CSS and JavaScript, and worked on the branding and content. The site introduces three age-based programs (ALT Play for ages 1–3, Progress Play for 3–5 and Project Play for 5–8) along with summer camps, and lets families register online. A warm cream and brick-red palette, a playful badge logo and bright, hands-on photography carry the studio's creative personality across every page.",
+      "A website for a children's art and play studio in Coquitlam, BC. Families can explore three age-based programs and summer camps and register online, all wrapped in a warm cream and brick-red look with a playful badge logo.",
     tools: ["Squarespace", "Custom CSS", "JavaScript"],
     image: "images/mock-redbrick.png",
     color: "#6b1a10",
@@ -63,7 +42,7 @@ const PROJECTS = [
     role: "UX research · UI design · Prototyping",
     summary: "A mobile app for buying disposable cameras and mailing them back for film development.",
     details:
-      "Windback is a mobile app that makes film photography easy from start to finish. Users compare disposable cameras by photo style, buy one, mail it back with prepaid shipping, and get their photos digitally and as prints. I started with research: a questionnaire and two interviews showed that everyone loved the grainy vintage look, but 83% said mailing or dropping off film was the biggest barrier, and all of them wanted one app to handle it all. From there I built a persona, a user scenario and a journey map, mapped the user flow, then designed the screens and a clickable prototype in Figma. Moving from wireframes to the final design, I moved the Add to Cart button above the photo-style previews so the main action is visible without scrolling.",
+      "Makes film photography easy from start to finish. Users compare disposable cameras by photo style, buy one, mail it back with prepaid shipping, and receive their photos digitally and as prints, with status updates along the way.",
     tools: ["Interviews & surveys", "Personas", "Journey mapping", "Wireframing", "Figma"],
     image: "",
     screens: [
@@ -91,7 +70,7 @@ const PROJECTS = [
     role: "UI design · Interactive prototyping",
     summary: "A custom tote bag shop where shoppers pick a bag colour and print and preview it live.",
     details:
-      "Canvas Club is a desktop e-commerce website where shoppers design their own tote bag. I designed and prototyped it in Figma around a reusable component system: a navbar that shows the active page, a hero carousel on the Home page, colour and print pickers (four variants each) that update the bag preview in real time, a Gallery page with working category filters, and a cart overlay that opens from the cart icon and buttons.",
+      "An online shop where customers design their own tote bag. Shoppers pick a bag colour and print and see the preview update instantly, browse a filterable gallery of community designs, and review their order in a slide-out cart.",
     tools: ["Figma", "Wireframing", "Components & variants"],
     image: "images/mock-canvasclub.png",
     color: "#e98c78",
@@ -112,7 +91,7 @@ const PROJECTS = [
     role: "Web design · Custom theme development",
     summary: "A custom WordPress website for a travel agency specializing in rail travel.",
     details:
-      "I designed and built a custom WordPress theme for West Coast Rail Tours, a travel agency that specializes in rail travel. The site organizes tours by region (Canada, USA and international) and includes a trip planner that lets visitors request a quote for round-trip, one-way or multi-city journeys. Building it as a custom theme gave the client a site that matched their brand exactly while staying easy for them to update.",
+      "A website for a travel agency specializing in rail travel. Tours are organized by region (Canada, USA and international), and a trip planner lets visitors request quotes for round-trip, one-way or multi-city journeys.",
     tools: ["WordPress", "PHP", "JavaScript"],
     image: "images/mock-wcrt.png",
     color: "#6b8f5e",
@@ -126,7 +105,7 @@ const PROJECTS = [
     role: "UX/UI redesign · Front-end development",
     summary: "A redesign of the program's website, chosen from competing proposals and launched as the official site.",
     details:
-      "I redesigned and built the website for BCIT's Technology Support Professional program to improve its usability and visual design. My design was chosen from a field of competing proposals and launched as the program's official website. The layout puts the most important sections (schedule, faculty, courses, IT certifications and resources) up front, and it adapts from desktop to tablet to phone.",
+      "The official website for BCIT's Technology Support Professional program, chosen from competing proposals. It puts the schedule, faculty, courses, certifications and resources up front in a layout that adapts from desktop to phone.",
     tools: ["Responsive design", "HTML", "CSS", "PHP"],
     image: "images/mock-tsp.png",
     color: "#b5562a",
@@ -134,13 +113,13 @@ const PROJECTS = [
   },
   {
     title: "I ♥ Audrey",
-    type: "Design & build",
+    type: "School project",
     areas: ["ux", "dev"],
     year: "",
     role: "Web design · Front-end development",
     summary: "A fully responsive photo blog celebrating Audrey Hepburn.",
     details:
-      "A responsive photo blog concept about Audrey Hepburn, designed and coded from scratch. It uses a black-and-white masonry photo grid that reflows from a desktop sidebar layout to a compact mobile view.",
+      "A photo journal celebrating Audrey Hepburn. A black-and-white masonry grid can be filtered by life, films and books, and the layout adapts from a desktop sidebar to a compact mobile menu.",
     tools: ["HTML", "CSS", "JavaScript"],
     image: "images/mock-audrey.png",
     color: "#333333",
@@ -154,7 +133,7 @@ const PROJECTS = [
     role: "Web design · Front-end development",
     summary: "A catalog website concept for a vintage camera shop.",
     details:
-      "A catalog website for a fictional vintage camera shop, designed and coded as a school project. The design sets a quiet, analogue mood to match the products: a badge-style logo, a textured paper background, generous white space, thin rule lines and soft pink accents. Across five pages (home with new arrivals, a camera gallery, about, service and contact) I focused on a clear navigation structure, consistent typography and a layout that keeps the cameras front and centre.",
+      "A catalog website for a vintage camera shop, with new arrivals, a camera gallery, and service, about and contact pages. A badge logo, paper texture and soft pink accents give it a quiet, analogue feel.",
     tools: ["HTML", "CSS"],
     image: "images/mock-vintage.png",
     color: "#e46a7a",

@@ -20,3 +20,14 @@ $('.item').hover(function () {
 	
 });
 
+
+$('[data-filter]').click(function (e) {
+	e.preventDefault();
+	var f = $(this).data('filter');
+	$('[data-filter]').removeClass('on');
+	$('[data-filter="' + f + '"]').addClass('on');
+	$('.item').each(function () {
+		$(this).toggle(f === 'all' || $(this).data('cat') === f);
+	});
+	$('.horizontal_nav').removeClass('show_menu');
+});

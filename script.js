@@ -1,5 +1,4 @@
 const grid = document.getElementById("projectGrid");
-// Bump this whenever images are replaced, so browsers load the new files.
 const IMG_V = "19";
 const img = (src) => (/^https?:/.test(src) ? src : `${src}?v=${IMG_V}`);
 const dialog = document.getElementById("projectDialog");
@@ -82,8 +81,6 @@ document.querySelectorAll(".chip").forEach((chip) =>
     render(chip.dataset.filter);
   })
 );
-
-// Dark mode toggle (remembers your choice)
 const root = document.documentElement;
 try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch {}
 document.getElementById("themeToggle").addEventListener("click", () => {
@@ -96,8 +93,6 @@ document.getElementById("themeToggle").addEventListener("click", () => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 render("all");
-
-// CY logo: always return to the very top of the page (no offset jump)
 document.querySelector(".logo").addEventListener("click", (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });

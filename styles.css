@@ -1,13 +1,11 @@
-/* Colours and type carried over from courtneyyoo.com: navy, mint, pale mint,
-   the original peach/coral accent, and Lato. */
 :root {
   --bg: #ffffff;
-  --band: #e7f2ef;          /* old hero background (pale mint) */
+  --band: #e7f2ef;
   --surface: #ffffff;
-  --text: #2c2c7d;          /* old navy */
-  --muted: #6b6973;         /* old dark gray */
-  --line: #bfdec8;          /* old mint green */
-  --accent: #ec6f5f;        /* original peach / coral */
+  --text: #2c2c7d;
+  --muted: #6b6973;
+  --line: #bfdec8;
+  --accent: #ec6f5f;
   --accent-text: #ec6f5f;
   --on-accent: #ffffff;
   --radius: 14px;
@@ -45,7 +43,6 @@ h2 {
 
 main, .nav-inner, footer { max-width: 1100px; margin: 0 auto; padding-inline: 24px; }
 
-/* sticky white bar with a mint line, like the old site */
 .nav {
   position: sticky; top: 0; z-index: 5;
   background: color-mix(in srgb, var(--bg) 94%, transparent);
@@ -70,7 +67,6 @@ main, .nav-inner, footer { max-width: 1100px; margin: 0 auto; padding-inline: 24
 .theme-toggle { background: none; border: 1px solid var(--line); color: var(--text); border-radius: 50%; width: 34px; height: 34px; cursor: pointer; font-size: 1rem; }
 .theme-toggle:hover { border-style: dashed; border-color: var(--accent); }
 
-/* pale-mint band behind the intro, edge to edge */
 .hero {
   padding: 12vh 0 10vh; position: relative;
   background: var(--band);
@@ -86,7 +82,6 @@ main, .nav-inner, footer { max-width: 1100px; margin: 0 auto; padding-inline: 24
 .lede { font-size: 1.15rem; font-weight: 300; color: var(--text); max-width: 620px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.8rem; }
 
-/* buttons: round, 2px border, outline turns dashed on hover (old "Go" buttons) */
 .btn {
   display: inline-block; padding: 11px 24px; border-radius: 999px; text-decoration: none;
   font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
@@ -122,7 +117,6 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
   border: 1px dashed var(--accent);
 }
 .card-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-/* round "VIEW" badge on hover, a nod to the old site's round hover overlays */
 .thumb { position: relative; }
 .card-btn .thumb::after {
   content: "View"; position: absolute; right: 14px; bottom: 14px;
@@ -192,7 +186,6 @@ section { padding-block: 72px; border-top: 1px solid var(--line); scroll-margin-
 .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { border: 1px solid var(--line); background: var(--surface); padding: 5px 12px; border-radius: 999px; font-size: .86rem; }
 
-/* contact sits on a pale-mint band, like the old site's contact area */
 .contact {
   text-align: center; padding-block: 96px;
   background: var(--band); box-shadow: 0 0 0 100vmax var(--band); clip-path: inset(0 -100vmax);
