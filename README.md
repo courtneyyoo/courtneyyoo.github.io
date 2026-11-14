@@ -16,7 +16,7 @@ A plain HTML/CSS/JavaScript portfolio. You don't need to install or build anythi
 
 1. Put a screenshot in `images/` (around 1600×1000 px works well).
 2. Open `projects.js`, copy one `{ ... },` block, and paste it below the others.
-3. Change the text. `type` is the small orange label (what the project is, like "Mobile app"), `areas` controls which filters show it (`"ux"`, `"dev"`, `"mobile"`), and `image` is `"images/your-file.png"`.
+3. Change the text. `type` is the small orange label (use one of "Client project", "Personal project", "Case study" or "Concept project"), `areas` controls which filters show it (`"ux"`, `"dev"`, `"mobile"`), and `image` is `"images/your-file.png"`.
 4. Save and refresh the page.
 
 ## After changing styles.css, projects.js or script.js

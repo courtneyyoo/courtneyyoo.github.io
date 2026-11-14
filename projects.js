@@ -1,7 +1,7 @@
 const PROJECTS = [
   {
     title: "4PM Planner",
-    type: "Mobile app",
+    type: "Personal project",
     areas: ["ux", "dev", "mobile"],
     role: "Product design · Mobile development",
     summary: "A family planner app that tracks kids' activities, who's driving, and what to bring.",
@@ -16,7 +16,7 @@ const PROJECTS = [
   },
   {
     title: "Red Brick Playhouse",
-    type: "Small business website",
+    type: "Client project",
     areas: ["ux", "dev"],
     role: "Web design · Development · Branding & content",
     summary: "A warm, playful website for a children's art studio, with programs, camps and online registration.",
@@ -34,7 +34,7 @@ const PROJECTS = [
   },
   {
     title: "Windback",
-    type: "Mobile app concept",
+    type: "Case study",
     areas: ["ux", "mobile"],
     role: "UX research · UI design · Prototyping",
     summary: "A mobile app for buying disposable cameras and mailing them back for film development.",
@@ -61,7 +61,7 @@ const PROJECTS = [
   },
   {
     title: "Canvas Club",
-    type: "E-commerce concept",
+    type: "Concept project",
     areas: ["ux"],
     role: "UI design · Interactive prototyping",
     summary: "A custom tote bag shop where shoppers pick a bag colour and print and preview it live.",
@@ -81,7 +81,7 @@ const PROJECTS = [
   },
   {
     title: "West Coast Rail Tours",
-    type: "Travel agency website",
+    type: "Client project",
     areas: ["ux", "dev"],
     role: "Web design · Custom theme development",
     summary: "A custom WordPress website for a travel agency specializing in rail travel.",
@@ -94,7 +94,7 @@ const PROJECTS = [
   },
   {
     title: "BCIT TSP Program Website",
-    type: "Program website",
+    type: "Client project",
     areas: ["ux", "dev"],
     role: "UX/UI redesign · Front-end development",
     summary: "A redesign of the program's website, chosen from competing proposals and launched as the official site.",
@@ -107,7 +107,7 @@ const PROJECTS = [
   },
   {
     title: "I ♥ Audrey",
-    type: "Photo blog",
+    type: "Concept project",
     areas: ["ux", "dev"],
     role: "Web design · Front-end development",
     summary: "A fully responsive photo blog celebrating Audrey Hepburn.",
@@ -120,7 +120,7 @@ const PROJECTS = [
   },
   {
     title: "Vintage Camera",
-    type: "Catalog website",
+    type: "Concept project",
     areas: ["ux", "dev"],
     role: "Web design · Front-end development",
     summary: "A catalog website concept for a vintage camera shop.",
